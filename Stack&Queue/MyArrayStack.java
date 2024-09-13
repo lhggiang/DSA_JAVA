@@ -44,6 +44,7 @@ public class MyArrayStack implements IStackQueue{
             for(int i=0; i<=topIndex; i++){
                 System.out.print(array[i] + " ");
             }
+            System.out.println();
         } else {
             System.out.print("Stack is empty");
         }

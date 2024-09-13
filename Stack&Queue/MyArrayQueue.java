@@ -13,7 +13,7 @@ public class MyArrayQueue implements IStackQueue{
 
     @Override
     public boolean push(int value) {
-        if(isFull()){
+        if(!isFull()){
             if(isEmpty()){
                 ++headIndex;
             }
@@ -49,9 +49,10 @@ public class MyArrayQueue implements IStackQueue{
     @Override
     public void show() {
         if(!isEmpty()){
-           for(int i = headIndex; i <= tailIndex; ++i){
+           for(int i = headIndex; i <= tailIndex; i++){
                System.out.print(array[i]+" ");
            }
+            System.out.println();
         } else {
             System.out.print("Queue is empty");
         }
